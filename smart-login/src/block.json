@@ -1,0 +1,57 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "create-block/smart-login",
+    "version": "0.1.0",
+    "title": "Smart Login",
+    "category": "widgets",
+    "description": "Display your site's login form with customizable fields.",
+    "example": {},
+    "attributes": {
+        "usernameLabel": {
+            "type": "string",
+            "default": "Username"
+        },
+        "passwordLabel": {
+            "type": "string",
+            "default": "Password"
+        },
+        "usernameClass": {
+            "type": "string",
+            "default": "username-input"
+        },
+        "passwordClass": {
+            "type": "string",
+            "default": "password-input"
+        },
+        "redirectURL": {
+            "type": "string"
+        },
+        "rememberMe": {
+            "type": "boolean",
+            "default": false
+        },
+        "buttonLabel": { 
+            "type": "string",
+            "default": "Login"
+        },
+        "buttonClass": { 
+            "type": "string",
+            "default": "login-button"
+        }
+    },
+    "supports": {
+        "color": {
+            "background": false,
+            "text": true
+        },
+        "html": false,
+        "typography": {
+            "fontSize": true
+        }
+    },
+    "textdomain": "smart-login",
+    "editorScript": "file:./index.js",
+    "editorStyle": "file:./index.css",
+    "style": "file:./style-index.css"
+}
